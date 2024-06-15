@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LinkedIn.Views.PrincipalView"
+             Background="White"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid Padding="20" RowSpacing="20" ColumnSpacing="0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+
+            <RowDefinition Height="Auto" />
+
+            <RowDefinition Height="10" />
+
+            <RowDefinition Height="Auto" />
+
+            <RowDefinition Height="50" />
+
+            <RowDefinition Height="Auto" />
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image 
+            Source="linkedin.png" 
+            WidthRequest="169"
+            HeightRequest="62"
+            HorizontalOptions="Center"
+            Grid.Row="1" />
+
+        <Label 
+            Text="Fundada en 2003, LinkedIn conecta a los profesionales de todo el mundo para hacerlos más productivos y exitosos. Con más de mil millones de miembros en todo el mundo, incluidos ejecutivos de todas las empresas Fortune 500, LinkedIn es la red profesional más grande del mundo. La empresa tiene un modelo de negocio diversificado con ingresos provenientes de soluciones de talento, soluciones de marketing, soluciones de ventas y productos de suscripciones premium. Con sede en Silicon Valley, LinkedIn tiene oficinas en todo el mundo." 
+            TextColor="#4a4750"
+            FontSize="24"
+            FontFamily="myriadprosemibold" 
+            FontAttributes="Bold"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="CenterAndExpand"
+            Grid.Row="3"/>
+
+        <StackLayout Spacing="25" Grid.Row="5" Orientation="Horizontal">
+            <Button 
+                TextColor="White"
+                BackgroundColor="#0a66c2"
+                Text="Cerrar Sesión" 
+                FontSize="21"
+                FontFamily="myriadprosemibold"
+                WidthRequest="169"
+                HeightRequest="55"
+                x:Name="btnLogoutIngresar"
+                Clicked="btnLogoutIngresar_Clicked"
+                HorizontalOptions="Center"/>
+
+            <Button 
+                TextColor="White"
+                BackgroundColor="#0a66c2"
+                Text="Programador" 
+                FontSize="21"
+                FontFamily="myriadprosemibold"
+                WidthRequest="169"
+                HeightRequest="55"
+                x:Name="btnAboutIngresar" 
+                Clicked="btnAboutIngresar_Clicked"
+                HorizontalOptions="Center"/>
+        </StackLayout>
+
+
+
+    </Grid>
+
+
+
+</ContentPage>
